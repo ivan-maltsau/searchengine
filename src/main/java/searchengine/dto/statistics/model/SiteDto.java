@@ -8,12 +8,12 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-public class SiteDBDto {
+public class SiteDto {
     private int id;
     private Status status;
     private Date statusTime;
     private String lastError;
     private String url;
     private String name;
-    private List<PageDBDto> pages = new ArrayList<>();
+    private List<PageDto> pages = new ArrayList<>();
 }

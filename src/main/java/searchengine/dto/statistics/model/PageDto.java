@@ -1,9 +1,9 @@
 package searchengine.dto.statistics.model;
 
 import lombok.Data;
-import searchengine.model.SiteDB;
+
 @Data
-public class PageDBDto {
+public class PageDto {
     private int id;
     private Integer siteId;
     String path;

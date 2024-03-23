@@ -10,7 +10,7 @@ import java.util.List;
 @Entity
 @Table(name = "site")
 @Data
-public class SiteDB
+public class Site
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,5 +28,5 @@ public class SiteDB
     @Column(columnDefinition="VARCHAR(255)")
     private String name;
     @OneToMany(mappedBy = "site", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<PageDB> pages;
+    private List<Page> pages;
 }
